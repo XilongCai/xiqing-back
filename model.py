@@ -60,7 +60,7 @@ def generate_plot():
     return jsonify({'plotBase64': image_base64})
 
 @app.route('/generate_plot_release', methods=['POST'])
-def generate_plot():
+def generate_plot_release():
     data = request.json
     V = float(data['x'])
     T = float(data['y'])
