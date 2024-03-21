@@ -31,11 +31,11 @@ def generate_plot():
 
     x = np.array([i / 10 for i in range(40)])
     plt.figure(figsize=(8,8), dpi= 100)
-    plt.plot(x, obj2(), '-', color = 'blue', label = 'predict curve', linewidth = 3.0)
+    plt.plot(obj2(), x, '-', color = 'blue', label = 'predict curve', linewidth = 3.0)
     plt.legend(fontsize = 24)
     plt.title(f'V={V}L/min T={T}℃', fontsize = 30)
-    plt.xlabel('Pressure/MPa', fontsize = 30)
-    plt.ylabel('Capacity/L', fontsize = 30)
+    plt.ylabel('Pressure/MPa', fontsize = 30)
+    plt.xlabel('Capacity/L', fontsize = 30)
 
     plt.tick_params(labelsize = 15)
 
@@ -78,11 +78,11 @@ def generate_plot_release():
 
     x = np.array([i / 10 for i in range(40)])
     plt.figure(figsize=(8,8), dpi= 100)
-    plt.plot(x, obj2(), '-', color = 'blue', label = 'predict curve', linewidth = 3.0)
+    plt.plot(obj2(), x, '-', color = 'blue', label = 'predict curve', linewidth = 3.0)
     plt.legend(fontsize = 24)
     plt.title(f'V={V}L/min T={T}℃', fontsize = 30)
-    plt.xlabel('Pressure/MPa', fontsize = 30)
-    plt.ylabel('Capacity/L', fontsize = 30)
+    plt.ylabel('Pressure/MPa', fontsize = 30)
+    plt.xlabel('Capacity/L', fontsize = 30)
 
     plt.tick_params(labelsize = 15)
 
