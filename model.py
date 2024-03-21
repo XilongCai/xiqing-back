@@ -68,7 +68,7 @@ def generate_plot_release():
     def obj2():     
         nonlocal V
         nonlocal T        
-        x = np.array([i / 10 for i in range(40)])
+        x = np.array([4 - i / 10 for i in range(40)])
         A = -467.543856173*V - 2.94691441564*T + 897.98773058 + 153.048114948*V**2
         K = 0.159775370844*V - 0.0970233190479*T + 7.72009208192
         C = 0.178672195081*V - 0.0550430835279*T + 4.66345107942
